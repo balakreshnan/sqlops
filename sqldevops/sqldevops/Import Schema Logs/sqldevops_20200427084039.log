@@ -1,0 +1,32 @@
+4/27/2020 3:40:39 PM	This log contains information about the import schema operation into project 'sqldevops' on computer 'MININT-R4D1BDG' by user 'babal'.
+4/27/2020 3:40:40 PM	Import of database schema has started.
+4/27/2020 3:40:44 PM	Gathering database credentials
+4/27/2020 3:40:44 PM	Gathering database options
+4/27/2020 3:40:44 PM	Gathering users
+4/27/2020 3:40:44 PM	Gathering roles
+4/27/2020 3:40:44 PM	Gathering role memberships
+4/27/2020 3:40:44 PM	Gathering symmetric keys
+4/27/2020 3:40:44 PM	Gathering schemas
+4/27/2020 3:40:44 PM	Gathering functions
+4/27/2020 3:40:44 PM	Gathering procedures
+4/27/2020 3:40:45 PM	Gathering partition table specification
+4/27/2020 3:40:45 PM	Gathering tables
+4/27/2020 3:40:46 PM	Gathering primary keys
+4/27/2020 3:40:47 PM	Gathering unique constraints
+4/27/2020 3:40:47 PM	Gathering default constraints
+4/27/2020 3:40:47 PM	Gathering views
+4/27/2020 3:40:47 PM	Gathering indexes
+4/27/2020 3:40:47 PM	Gathering statistics
+4/27/2020 3:40:48 PM	Gathering column store indexes
+4/27/2020 3:40:48 PM	Gathering external data sources
+4/27/2020 3:40:48 PM	Gathering external file formats
+4/27/2020 3:40:48 PM	Gathering external tables
+4/27/2020 3:40:50 PM	Your permissions to see all objects in the server or database could not be verified.  The original error was:
+The SELECT permission has not been granted on 'sys.sql_logins' for the 'master' database. You must be a member of the 'loginmanager' role to access this system view. 
+Reverse Engineer will continue the import process, and logins will not be imported.
+The reverse engineering operation will attempt to continue anyway, but the resulting model might be incomplete, malformed, or incorrect.
+4/27/2020 3:40:52 PM	Scanning project for duplicate elements
+4/27/2020 3:40:52 PM	Finished duplicate element processing
+4/27/2020 3:40:53 PM	Finished importing database.
+4/27/2020 3:40:53 PM	A summary of the import was saved to the following location: C:\Users\babal\Documents\Work\EventDrivenDL\dbproject\sqldevops\sqldevops\Import Schema Logs\sqldevops_20200427084039.log
+4/27/2020 3:40:53 PM	Click Finish to continue...

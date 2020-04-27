@@ -1,0 +1,2 @@
+﻿CREATE USER [Manager] WITHOUT LOGIN;
+

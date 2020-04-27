@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>sqldevops</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{2684f7e1-ceb3-4bd0-8ab6-a5c9006d75fa}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlDwDatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>sqldevops</RootNamespace>
+    <AssemblyName>sqldevops</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <QueryStoreCaptureMode>None</QueryStoreCaptureMode>
+    <QueryStoreDesiredState>Off</QueryStoreDesiredState>
+    <QueryStoreFlushInterval>0</QueryStoreFlushInterval>
+    <QueryStoreStatsInterval>0</QueryStoreStatsInterval>
+    <QueryStoreMaxPlansPerQuery>0</QueryStoreMaxPlansPerQuery>
+    <QueryStoreStaleQueryThreshold>0</QueryStoreStaleQueryThreshold>
+    <QueryStoreMaxStorageSize>0</QueryStoreMaxStorageSize>
+    <DbScopedConfigLegacyCardinalityEstimation>Off</DbScopedConfigLegacyCardinalityEstimation>
+    <DbScopedConfigLegacyCardinalityEstimationSecondary>Off</DbScopedConfigLegacyCardinalityEstimationSecondary>
+    <DbScopedConfigMaxDOP>0</DbScopedConfigMaxDOP>
+    <DbScopedConfigMaxDOPSecondary>0</DbScopedConfigMaxDOPSecondary>
+    <DbScopedConfigParameterSniffing>Off</DbScopedConfigParameterSniffing>
+    <DbScopedConfigParameterSniffingSecondary>Off</DbScopedConfigParameterSniffingSecondary>
+    <DbScopedConfigOptimizerHotfixes>Off</DbScopedConfigOptimizerHotfixes>
+    <DbScopedConfigOptimizerHotfixesSecondary>Off</DbScopedConfigOptimizerHotfixesSecondary>
+    <DelayedDurability>DISABLED</DelayedDurability>
+    <AutoCreateStatisticsIncremental>False</AutoCreateStatisticsIncremental>
+    <MemoryOptimizedElevateToSnapshot>False</MemoryOptimizedElevateToSnapshot>
+    <Containment>None</Containment>
+    <IsNestedTriggersOn>True</IsNestedTriggersOn>
+    <IsTransformNoiseWordsOn>False</IsTransformNoiseWordsOn>
+    <TwoDigitYearCutoff>2049</TwoDigitYearCutoff>
+    <NonTransactedFileStreamAccess>OFF</NonTransactedFileStreamAccess>
+    <TargetRecoveryTimePeriod>60</TargetRecoveryTimePeriod>
+    <TargetRecoveryTimeUnit>SECONDS</TargetRecoveryTimeUnit>
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>False</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>0</ChangeTrackingRetentionPeriod>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>NONE</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>False</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <CompatibilityMode>130</CompatibilityMode>
+    <AnsiNullDefault>True</AnsiNullDefault>
+    <AnsiNulls>True</AnsiNulls>
+    <AnsiPadding>True</AnsiPadding>
+    <AnsiWarnings>True</AnsiWarnings>
+    <ArithAbort>True</ArithAbort>
+    <ConcatNullYieldsNull>True</ConcatNullYieldsNull>
+    <QuotedIdentifier>True</QuotedIdentifier>
+    <NumericRoundAbort>True</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DatabaseState>ONLINE</DatabaseState>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>GLOBAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>False</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>SIMPLE</Recovery>
+    <EnableFullTextSearch>False</EnableFullTextSearch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="External Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\T_2125710e8ebd4a1b92291508d4fa56c6.sql" />
+    <Build Include="dbo\Tables\custdata15.sql" />
+    <Build Include="dbo\Tables\custdata16.sql" />
+    <Build Include="dbo\Tables\custdata17.sql" />
+    <Build Include="dbo\Tables\custdata18.sql" />
+    <Build Include="dbo\Tables\custdata19.sql" />
+    <Build Include="dbo\Tables\cur_cfs_printing_trx_fct.sql" />
+    <Build Include="dbo\Tables\Sales.sql" />
+    <Build Include="dbo\Tables\cur_cfs_blocked_resources_conditions_history_dim.sql" />
+    <Build Include="dbo\Tables\cur_sc_interstore_transfer_trx_fct.sql" />
+    <Build Include="dbo\Tables\supplier.sql" />
+    <Build Include="dbo\Tables\product.sql" />
+    <Build Include="dbo\Tables\identitytest.sql" />
+    <Build Include="dbo\Tables\T_4c00f02c968b4b34b3fff37e4f90975b.sql" />
+    <Build Include="dbo\Tables\YellowCab_Rawdata1.sql" />
+    <Build Include="dbo\Tables\custdatastream.sql" />
+    <Build Include="dbo\Tables\custdatastream1.sql" />
+    <Build Include="dbo\Tables\Membership.sql" />
+    <Build Include="dbo\Tables\custdata1.sql" />
+    <Build Include="dbo\Tables\databricks_streaming_checkpoint_fdcccde00a294c258bcc6b122ec0f18c.sql" />
+    <Build Include="dbo\Tables\databricks_streaming_checkpoint_f04dce4a151a4345975234beddbc273e.sql" />
+    <Build Include="dbo\Tables\custdata20.sql" />
+    <Build Include="dbo\Tables\databricks_streaming_checkpoint_35a1e7ce46194428b053e231397e0a0f.sql" />
+    <Build Include="dbo\Tables\custdata2.sql" />
+    <Build Include="dbo\Tables\custdata10.sql" />
+    <Build Include="dbo\Tables\custdata11.sql" />
+    <Build Include="dbo\Tables\custdata12.sql" />
+    <Build Include="dbo\Tables\custdata13.sql" />
+    <Build Include="dbo\Tables\custdata14.sql" />
+    <Build Include="dbo\Tables\sc_location_history_dim.sql" />
+    <Build Include="dbo\Tables\sc_supplier_catalog_history_dim.sql" />
+    <Build Include="dbo\Tables\cfs_team_member_hist_dim.sql" />
+    <Build Include="dbo\Tables\sc_supplier_history_dim.sql" />
+    <Build Include="dbo\Tables\sc_product_history_dim.sql" />
+    <Build Include="dbo\Tables\sc_stock_movement_trx_fct.sql" />
+    <Build Include="dbo\Tables\YellowCab_Rawdata.sql" />
+    <Build Include="dbo\Tables\GreenCab_RawData.sql" />
+    <Build Include="dbo\Tables\T_898a8ec98acd4e95b16f6fce1b0a8526.sql" />
+    <Build Include="Security\adbingest.sql" />
+    <Build Include="Security\babal%40microsoft.com.sql" />
+    <Build Include="Security\bbsqldw.sql" />
+    <Build Include="Security\Manager.sql" />
+    <Build Include="Security\Sales1.sql" />
+    <Build Include="Security\Sales2.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Stored Procedures\usp_createtable.sql" />
+    <Build Include="dbo\Stored Procedures\usp_droptables.sql" />
+    <Build Include="dbo\Stored Procedures\usp_cleanDatabrickStreamingtables.sql" />
+    <Build Include="Security\MasterKeys.sql" />
+    <Build Include="Security\tmp_databricks_2020_02_29_15_44_13_217_837473b003b7456a9a72bbd6e6aeabd0_storage_credential.sql" />
+    <Build Include="Security\tmp_databricks_2020_02_29_15_44_15_142_f7985ac3c1614864b3735a434ddcc664_storage_credential.sql" />
+    <Build Include="Security\tmp_databricks_2020_02_29_15_44_14_868_4b0971677c504de184c7446a1195cb30_storage_credential.sql" />
+    <Build Include="Security\tmp_databricks_2020_02_29_15_44_14_999_b469123c3c664b1f93137e3de855b7bf_storage_credential.sql" />
+    <Build Include="Security\tmp_databricks_2020_02_29_15_44_13_217_f6aa2fd6a0a44627afc14792a7925673_storage_credential.sql" />
+    <Build Include="Security\tmp_databricks_2020_02_29_15_44_13_870_70f5d2145ce04ac1bb7aafab9202db74_storage_credential.sql" />
+    <Build Include="Security\tmp_databricks_2020_02_29_15_44_13_731_ded1871253dc44adb0ee39dc4e21611b_storage_credential.sql" />
+    <Build Include="Security\tmp_databricks_2020_02_29_15_44_14_133_a4b3f39b342645c8a023ed7354801882_storage_credential.sql" />
+    <Build Include="Security\tmp_databricks_2020_02_29_15_59_33_342_1b2452ff4b3e4874af02ccd49af32877_storage_credential.sql" />
+    <Build Include="Security\tmp_databricks_2020_02_29_15_59_35_285_f8fb519f815d4f59b6d03426d3239d5d_storage_credential.sql" />
+    <Build Include="Security\tmp_databricks_2020_02_29_15_59_35_079_4aad0da0d1a94f1dacc4035f949e10ea_storage_credential.sql" />
+    <Build Include="Security\tmp_databricks_2020_02_29_15_59_34_538_9800851c98e64583a648b1f7a2b20fdb_storage_credential.sql" />
+    <Build Include="Security\tmp_databricks_2020_02_29_15_59_33_342_667108dba6464303baf5355dbd594251_storage_credential.sql" />
+    <Build Include="Security\tmp_databricks_2020_02_29_15_59_34_639_a41f57dcb09747d69e6f4adaeda0b87f_storage_credential.sql" />
+    <Build Include="Security\tmp_databricks_2020_02_29_15_59_33_619_ae318f0240ed4eba9ac620b7a3c9514f_storage_credential.sql" />
+    <Build Include="Security\tmp_databricks_2020_02_29_15_59_33_422_d2f8dd6201f84a659334ae32d5d2554d_storage_credential.sql" />
+    <Build Include="Security\Security.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_44_13_217_837473b003b7456a9a72bbd6e6aeabd0_data_source.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_44_14_868_4b0971677c504de184c7446a1195cb30_data_source.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_44_14_999_b469123c3c664b1f93137e3de855b7bf_data_source.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_44_13_870_70f5d2145ce04ac1bb7aafab9202db74_data_source.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_44_13_731_ded1871253dc44adb0ee39dc4e21611b_data_source.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_44_13_217_f6aa2fd6a0a44627afc14792a7925673_data_source.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_44_15_142_f7985ac3c1614864b3735a434ddcc664_data_source.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_44_14_133_a4b3f39b342645c8a023ed7354801882_data_source.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_59_35_285_f8fb519f815d4f59b6d03426d3239d5d_data_source.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_59_35_079_4aad0da0d1a94f1dacc4035f949e10ea_data_source.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_59_33_342_1b2452ff4b3e4874af02ccd49af32877_data_source.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_59_34_538_9800851c98e64583a648b1f7a2b20fdb_data_source.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_59_33_342_667108dba6464303baf5355dbd594251_data_source.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_59_34_639_a41f57dcb09747d69e6f4adaeda0b87f_data_source.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_59_33_619_ae318f0240ed4eba9ac620b7a3c9514f_data_source.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_59_33_422_d2f8dd6201f84a659334ae32d5d2554d_data_source.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_44_13_217_837473b003b7456a9a72bbd6e6aeabd0_file_format.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_44_13_870_70f5d2145ce04ac1bb7aafab9202db74_file_format.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_44_14_868_4b0971677c504de184c7446a1195cb30_file_format.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_44_13_731_ded1871253dc44adb0ee39dc4e21611b_file_format.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_44_13_217_f6aa2fd6a0a44627afc14792a7925673_file_format.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_44_14_999_b469123c3c664b1f93137e3de855b7bf_file_format.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_44_15_142_f7985ac3c1614864b3735a434ddcc664_file_format.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_44_14_133_a4b3f39b342645c8a023ed7354801882_file_format.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_59_35_285_f8fb519f815d4f59b6d03426d3239d5d_file_format.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_59_35_079_4aad0da0d1a94f1dacc4035f949e10ea_file_format.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_59_33_342_1b2452ff4b3e4874af02ccd49af32877_file_format.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_59_34_538_9800851c98e64583a648b1f7a2b20fdb_file_format.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_59_33_342_667108dba6464303baf5355dbd594251_file_format.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_59_34_639_a41f57dcb09747d69e6f4adaeda0b87f_file_format.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_59_33_619_ae318f0240ed4eba9ac620b7a3c9514f_file_format.sql" />
+    <Build Include="External Resources\tmp_databricks_2020_02_29_15_59_33_422_d2f8dd6201f84a659334ae32d5d2554d_file_format.sql" />
+  </ItemGroup>
+</Project>

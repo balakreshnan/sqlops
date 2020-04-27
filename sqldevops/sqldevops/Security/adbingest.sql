@@ -1,0 +1,2 @@
+﻿CREATE USER [adbingest] WITHOUT LOGIN;
+
