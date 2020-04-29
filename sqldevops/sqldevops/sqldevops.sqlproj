@@ -198,5 +198,6 @@
     <Build Include="dbo\Stored Procedures\usp_rebuildindexforfacts.sql" />
     <Build Include="dbo\Stored Procedures\usp_updatestatsfordims.sql" />
     <Build Include="dbo\Stored Procedures\usp_updatestatsforfacts.sql" />
+    <Build Include="dbo\Stored Procedures\usp_cleanscopedcrendentials.sql" />
   </ItemGroup>
 </Project>
