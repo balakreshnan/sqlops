@@ -194,5 +194,9 @@
     <Build Include="Security\Security.sql" />
     <Build Include="dbo\Stored Procedures\usp_cleanDatabrickStreamingfileformat.sql" />
     <Build Include="dbo\Stored Procedures\usp_cleanDatabrickStreamingdatasources.sql" />
+    <Build Include="dbo\Stored Procedures\usp_rebuildindexfordims.sql" />
+    <Build Include="dbo\Stored Procedures\usp_rebuildindexforfacts.sql" />
+    <Build Include="dbo\Stored Procedures\usp_updatestatsfordims.sql" />
+    <Build Include="dbo\Stored Procedures\usp_updatestatsforfacts.sql" />
   </ItemGroup>
 </Project>
